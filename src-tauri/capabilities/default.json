@@ -24,6 +24,15 @@
           "name": "python",
           "cmd": "python",
           "args": true
+        },
+        {
+          "name": "binaries/pyserver",
+          "sidecar": true,
+          "args": [
+            {"validator": "\\d+"},
+            "-d",
+            {"validator": ".+"}
+          ]
         }
       ]
     }
